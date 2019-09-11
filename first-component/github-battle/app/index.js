@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
+import Popular from "./components/Popular";
 
 // Component composed of:
 // State
@@ -9,7 +10,12 @@ import './index.css'
 
 class App extends React.Component {
     render() {
-        return <div>Hello World</div> // JSX will get converted by Babel to JS e.g.: React.createElement(...)
+        // JSX will get converted by Babel to JS to return React.createElement(...)
+        return (
+            <div className='container'>
+                <Popular />
+            </div>
+        )
     }
 }
 
